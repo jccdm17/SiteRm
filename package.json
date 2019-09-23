@@ -1,0 +1,14 @@
+{
+  "name": "siterm",
+  "version": "1.0.0",
+  "description": "Site RM",
+  "main": "\\Publico\\js\\index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Corcini",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^6.6.2"
+  }
+}

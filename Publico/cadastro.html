@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+<ul id="dropdownUsuario" class="dropdown-content">
+    <li><a id="sairContaBtn" href="#!">Sair</a></li>
+</ul>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img id="logo-container" src="/Publico/rm.jpg" style="height: 100%;margin-top:0px;" href="#" class="brand-logo">
+      <ul id="listaMenuLateral" class="right hide-on-med-and-down">
+        
+        <li><a id="CadastroTop" href="#">Cadastro </a></li>
+        <li><a id="PagamentosTop" href="#">Pagamentos</a></li>
+        <li><a id="EnquetesTop" href="#">Enquetes</a></li>
+        <li><a id="LocalizacaoTop" href="#">Localização</a></li>
+        <li><a id="AvisosTop" href="#">Avisos</a></li>
+        <li><a id="MensagensTop" href="#">Mensagens</a></li>
+        <li><a id="MenuContaTop" class="dropdown-trigger" href="#!" data-target="dropdownUsuario">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> 
+        
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a id="MenuContaSide" href="#">Navbar Link></a></li>
+        <li><a id="CadastroSide" href="#">Cadastro <i class="material-icons">account_box</i></a></li>
+        <li><a id="PagamentosSide" href="#">Pagamentos<i class="material-icons">payment</i></a></li>
+        <li><a id="EnquetesSide" href="#">Enquetes<i class="material-icons">how_to_vote</i></a></li>
+        <li><a id="LocalizacaoSide" href="#">Localização<i class="material-icons">map</i></a></li>
+        <li><a id="AvisosSide" href="#">Avisos<i class="material-icons">notifications_active</i></a></li>
+        <li><a id="MensagensSide" href="#">Mensagens<i class="material-icons">question_answer</i></a></li>    
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+        <div class="row" style="margin-top: 35px; margin-bottom: 50px !important; ">
+            <div class="col s12 m3 card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Cadastro</h5>
+                </div>
+            </div>
+        
+            <div class="col s12 m3 offset-m1 card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Pagamentos</h5>
+                </div>
+            </div>
+        
+            <div class="col s12 m3 offset-m1 card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Enquetes</h5>
+                </div>
+            </div>
+            <div class="col s12 m3  card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Localização</h5>                         
+                </div>
+            </div>
+            <div class="col s12 m3 offset-m1 card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Avisos</h5>
+                </div>
+            </div>
+            <div class="col s12 m3 offset-m1 card-panel">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Mensagem</h5>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!--
+  <div class="col s12 m12 l12">
+        <img src="van5.jpg" style="width:100%" alt="Unsplashed background img 2">
+  </div>
+-->
+
+  <footer class="page-footer grey">
+      <div class="row">
+          <div class="col s4 l2">
+              <img src="/Publico/jacare.jpg" style="width: 100%;">
+          </div>
+        <div class="col l3 s8">
+          <h5 class="white-text">R&M Transporte Escolar</h5>
+          <p class="grey-text text-lighten-4">Garantir o seu Direito de ir e vir com conforto, agilidade, cortesia, segurança e preço justo!</p>
+        </div>
+
+        <div class="col l3 s4">
+            <h5 class="white-text">Tio Ricardo:</h5>
+            <p style="margin: 0px"><a class="grey-text text-lighten-4" href="tel:+11990207900">11 99020-7900</a></p>
+            <p style="margin: 0px"><a class="grey-text text-lighten-4" href="tel:+11997456786">11 99745-6786</a></p>
+        </div>
+        <!--
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        -->
+      </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" >Julio César</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--Materialize/jquery-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <!-- SKD Principal do Firebase (Tem que ficar antes dos outros SDK's) -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+
+  <!-- SDK's do Firebase que serão utilizados-->
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-functions.js"></script>
+
+  <!-- Paginas de Config-->
+  <script src="./js/configFirebase.js"></script>
+  <script src="./js/index.js"></script>
+
+  </body>
+</html>

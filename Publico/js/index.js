@@ -1,6 +1,8 @@
 
 
 
+$(".sistemaBtn").click(function(){ location.href="./sistemainterno.html";})    
+$(".sairContaBtn").click(function(){ firebase.auth().signOut();location.reload();})           
 
 
 

@@ -41,18 +41,24 @@ firebase.firestore().enablePersistence()
                 console.log("  Email: " + profile.email);
                 console.log("  Photo URL: " + profile.photoURL);
                 
-                $("#MenuContaTop").html("Conta ("+profile.displayName+")")    
-                $("#MenuContaSide").html("Conta ("+profile.displayName+")")
-
-                $(".sairContaBtn").click(function(){ firebase.auth().signOut();location.reload();})           
+                if((profile.displayName == null)&&(profile.email!=null)){
+                    $("#MenuContaTop").html("Conta ("+profile.email+")")    
+                    $("#MenuContaSide").html("Conta ("+profile.email+")")    
+                }else if(profile.displayName!=null){
+                    $("#MenuContaTop").html("Conta ("+profile.displayName+")")    
+                    $("#MenuContaSide").html("Conta ("+profile.displayName+")")    
+                }else{
+                    $("#MenuContaTop").html("Conta")    
+                    $("#MenuContaSide").html("Conta")  
+                }
             });
     
         } else {
             $("#MenuContaTop").html("Login")
-            $("#MenuContaTop").click(function(){window.location.replace("/Publico/login.html");})
+            $("#MenuContaTop").click(function(){window.location.replace("./login.html");})
     
             $("#MenuContaSide").html("Login")
-            $("#MenuContaSide").click(function(){window.location.replace("/Publico/login.html");})
+            $("#MenuContaSide").click(function(){window.location.replace("./login.html");})
         }
     
     }

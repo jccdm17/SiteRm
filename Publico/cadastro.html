@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <!-- CSS DataTable -->
+  <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -17,7 +20,7 @@
 </ul>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <img id="logo-container" src="/Publico/rm.jpg" style="height: 100%;margin-top:0px;" href="#" class="brand-logo">
+      <img id="logo-container" src="./images/rm.jpg" style="height: 100%;margin-top:0px;" href="#" class="brand-logo">
       <ul id="listaMenuLateral" class="right hide-on-med-and-down">
         
         <li><a id="CadastroTop" href="#">Cadastro </a></li>
@@ -26,12 +29,12 @@
         <li><a id="LocalizacaoTop" href="#">Localização</a></li>
         <li><a id="AvisosTop" href="#">Avisos</a></li>
         <li><a id="MensagensTop" href="#">Mensagens</a></li>
-        <li><a id="MenuContaTop" class="dropdown-trigger" href="#!" data-target="dropdownUsuario">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> 
+        <li><a id="MenuContaTop" class="dropdown-trigger" href="#!" data-target="dropdownUsuario">Login/Conta<i class="material-icons right">arrow_drop_down</i></a></li> 
         
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a id="MenuContaSide" href="#">Navbar Link></a></li>
+        <li><a id="MenuContaSide" class="dropdown-trigger" href="#!" data-target="dropdownUsuario">Login/Conta<i class="material-icons right">arrow_drop_down</i></a></li> 
         <li><a id="CadastroSide" href="#">Cadastro <i class="material-icons">account_box</i></a></li>
         <li><a id="PagamentosSide" href="#">Pagamentos<i class="material-icons">payment</i></a></li>
         <li><a id="EnquetesSide" href="#">Enquetes<i class="material-icons">how_to_vote</i></a></li>
@@ -45,7 +48,46 @@
   <div class="container">
     <div class="section">
         <div class="row" style="margin-top: 35px; margin-bottom: 50px !important; ">
-            <div class="col s12 m3 card-panel">
+          <div class="col l12 card-panel">
+            <div class="row">
+              <div class="col l12 center-align">
+                <h5>Cadastro de Criança:</h5>
+              </div>
+              <div class="col l12"> 
+                <div class="divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l3 input-field">
+                <label for="Nome">Nome:</label>
+                <input id="Nome" type="text">
+              </div>
+              <div class="col l3 input-field">
+                <label for="Nome">Sobrenome:</label>
+                <input id="Nome" type="text">
+              </div>
+              <div class="col l3 input-field">
+                
+                <input id="Nome" type="date">
+                <label class="active" for="Nome">Nascimento:</label>
+              </div>
+              <div class="col l3 input-field center-align">
+                <a class="btn">Gravar</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l12"> 
+                <div class="divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l12"> 
+                <div id="tabelaCriancas"></div>
+              </div>
+            </div>
+          </div>  
+          
+          <div class="col s12 m3 card-panel">
                 <div class="icon-block">
                     <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
                     <h5 class="center">Cadastro</h5>
@@ -97,7 +139,7 @@
   <footer class="page-footer grey">
       <div class="row">
           <div class="col s4 l2">
-              <img src="/Publico/jacare.jpg" style="width: 100%;">
+              <img src="./images/jacare.jpg" style="width: 100%;">
           </div>
         <div class="col l3 s8">
           <h5 class="white-text">R&M Transporte Escolar</h5>
@@ -156,6 +198,9 @@
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-functions.js"></script>
 
+  <!-- Js DataTable-->
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  
   <!-- Paginas de Config-->
   <script src="./js/configFirebase.js"></script>
   <script src="./js/index.js"></script>
